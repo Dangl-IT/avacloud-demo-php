@@ -1,6 +1,6 @@
 <?php
 /**
- * AdditionTypeDto
+ * ItemNumberSchemaTierTypeDto
  *
  * PHP version 5
  *
@@ -31,7 +31,7 @@ namespace Swagger\Client\Model;
 use \Swagger\Client\ObjectSerializer;
 
 /**
- * AdditionTypeDto Class Doc Comment
+ * ItemNumberSchemaTierTypeDto Class Doc Comment
  *
  * @category Class
  * @description 
@@ -39,14 +39,16 @@ use \Swagger\Client\ObjectSerializer;
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class AdditionTypeDto
+class ItemNumberSchemaTierTypeDto
 {
     /**
      * Possible values of this enum
      */
-    const NONE = 'None';
-    const BY_BUYER = 'ByBuyer';
-    const BY_BIDDER = 'ByBidder';
+    const UNDEFINED = 'Undefined';
+    const INDEX = 'Index';
+    const POSITION = 'Position';
+    const GROUP = 'Group';
+    const LOT = 'Lot';
     
     /**
      * Gets allowable values of the enum
@@ -55,9 +57,11 @@ class AdditionTypeDto
     public static function getAllowableEnumValues()
     {
         return [
-            self::NONE,
-            self::BY_BUYER,
-            self::BY_BIDDER,
+            self::UNDEFINED,
+            self::INDEX,
+            self::POSITION,
+            self::GROUP,
+            self::LOT,
         ];
     }
 }

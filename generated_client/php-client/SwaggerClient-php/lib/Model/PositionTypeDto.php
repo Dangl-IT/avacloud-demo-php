@@ -1,6 +1,6 @@
 <?php
 /**
- * AdditionTypeDto
+ * PositionTypeDto
  *
  * PHP version 5
  *
@@ -31,7 +31,7 @@ namespace Swagger\Client\Model;
 use \Swagger\Client\ObjectSerializer;
 
 /**
- * AdditionTypeDto Class Doc Comment
+ * PositionTypeDto Class Doc Comment
  *
  * @category Class
  * @description 
@@ -39,14 +39,14 @@ use \Swagger\Client\ObjectSerializer;
  * @author   Swagger Codegen team
  * @link     https://github.com/swagger-api/swagger-codegen
  */
-class AdditionTypeDto
+class PositionTypeDto
 {
     /**
      * Possible values of this enum
      */
-    const NONE = 'None';
-    const BY_BUYER = 'ByBuyer';
-    const BY_BIDDER = 'ByBidder';
+    const REGULAR = 'Regular';
+    const OPTIONAL = 'Optional';
+    const ALTERNATIVE = 'Alternative';
     
     /**
      * Gets allowable values of the enum
@@ -55,9 +55,9 @@ class AdditionTypeDto
     public static function getAllowableEnumValues()
     {
         return [
-            self::NONE,
-            self::BY_BUYER,
-            self::BY_BIDDER,
+            self::REGULAR,
+            self::OPTIONAL,
+            self::ALTERNATIVE,
         ];
     }
 }

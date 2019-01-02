@@ -19,9 +19,10 @@ Name | Type | Description | Notes
 **total_price** | **float** |  | 
 **total_price_gross** | **float** |  | 
 **total_price_gross_deducted** | **float** |  | 
-**type** | [**\Swagger\Client\Model\PriceTypeDto**](PriceTypeDto.md) |  | 
+**price_type** | [**\Swagger\Client\Model\PriceTypeDto**](PriceTypeDto.md) |  | 
 **bidder** | [**\Swagger\Client\Model\PartyInformationDto**](PartyInformationDto.md) |  | [optional] 
 **gaeb_xml_id** | **string** |  | [optional] 
+**project_information** | **object** |  | [optional] 
 **exchange_phase** | [**\Swagger\Client\Model\ExchangePhaseDto**](ExchangePhaseDto.md) |  | 
 **origin** | [**\Swagger\Client\Model\OriginDto**](OriginDto.md) |  | 
 **creation_date** | [**\DateTime**](\DateTime.md) |  | 

@@ -23,7 +23,8 @@ Name | Type | Description | Notes
 **total_price_gross** | **float** |  | 
 **total_price_gross_deducted** | **float** |  | 
 **deducted_price** | **float** |  | 
-**type** | [**\Swagger\Client\Model\PriceTypeDto**](PriceTypeDto.md) |  | 
+**position_type** | [**\Swagger\Client\Model\PositionTypeDto**](PositionTypeDto.md) |  | 
+**price_type** | [**\Swagger\Client\Model\PriceTypeDto**](PriceTypeDto.md) |  | 
 **service_type** | [**\Swagger\Client\Model\ServiceTypeDto**](ServiceTypeDto.md) |  | 
 **short_text** | **string** |  | [optional] 
 **long_text** | **string** |  | [optional] 
@@ -32,6 +33,8 @@ Name | Type | Description | Notes
 **element_type** | **string** |  | [optional] 
 **quantity_assignments** | [**\Swagger\Client\Model\QuantityAssignmentDto[]**](QuantityAssignmentDto.md) |  | [optional] 
 **commerce_properties** | [**\Swagger\Client\Model\CommercePropertiesDto**](CommercePropertiesDto.md) |  | [optional] 
+**alternative_to** | **string** |  | [optional] 
+**type** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

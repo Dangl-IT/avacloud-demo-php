@@ -1,6 +1,6 @@
 <?php
 /**
- * ExecutionDescriptionDtoTest
+ * ItemNumberSchemaTierTypeDtoTest
  *
  * PHP version 5
  *
@@ -30,15 +30,15 @@
 namespace Swagger\Client;
 
 /**
- * ExecutionDescriptionDtoTest Class Doc Comment
+ * ItemNumberSchemaTierTypeDtoTest Class Doc Comment
  *
  * @category    Class
- * @description ExecutionDescriptionDto
+ * @description 
  * @package     Swagger\Client
  * @author      Swagger Codegen team
  * @link        https://github.com/swagger-api/swagger-codegen
  */
-class ExecutionDescriptionDtoTest extends \PHPUnit_Framework_TestCase
+class ItemNumberSchemaTierTypeDtoTest extends \PHPUnit_Framework_TestCase
 {
 
     /**
@@ -70,37 +70,9 @@ class ExecutionDescriptionDtoTest extends \PHPUnit_Framework_TestCase
     }
 
     /**
-     * Test "ExecutionDescriptionDto"
+     * Test "ItemNumberSchemaTierTypeDto"
      */
-    public function testExecutionDescriptionDto()
-    {
-    }
-
-    /**
-     * Test attribute "blocks"
-     */
-    public function testPropertyBlocks()
-    {
-    }
-
-    /**
-     * Test attribute "label"
-     */
-    public function testPropertyLabel()
-    {
-    }
-
-    /**
-     * Test attribute "identifier"
-     */
-    public function testPropertyIdentifier()
-    {
-    }
-
-    /**
-     * Test attribute "element_type"
-     */
-    public function testPropertyElementType()
+    public function testItemNumberSchemaTierTypeDto()
     {
     }
 }

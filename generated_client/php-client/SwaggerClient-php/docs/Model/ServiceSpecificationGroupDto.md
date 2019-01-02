@@ -18,12 +18,13 @@ Name | Type | Description | Notes
 **total_price** | **float** |  | 
 **total_price_gross** | **float** |  | 
 **total_price_gross_deducted** | **float** |  | 
-**type** | [**\Swagger\Client\Model\PriceTypeDto**](PriceTypeDto.md) |  | 
+**price_type** | [**\Swagger\Client\Model\PriceTypeDto**](PriceTypeDto.md) |  | 
 **short_text** | **string** |  | [optional] 
 **comission_status** | [**\Swagger\Client\Model\ComissionStatusDto**](ComissionStatusDto.md) |  | 
 **item_number** | [**\Swagger\Client\Model\ItemNumberDto**](ItemNumberDto.md) |  | [optional] 
 **element_type** | **string** |  | [optional] 
 **is_lot** | **bool** |  | 
+**type** | **string** |  | [optional] 
 
 [[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
 

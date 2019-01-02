@@ -3,6 +3,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
+**is_opening_text** | **bool** |  | 
+**is_closing_text** | **bool** |  | 
 **short_text** | **string** |  | [optional] 
 **addition_type** | [**\Swagger\Client\Model\AdditionTypeDto**](AdditionTypeDto.md) |  | 
 **long_text** | **string** |  | [optional] 
