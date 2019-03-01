@@ -20,6 +20,10 @@ Simply run the PHP server in the root of this repository and navigate to `/demo.
 
 Please make sure that the `$clientId` and `$clientSecret` variables are set at the top of the `demo.php`. See the next section for details.
 
+## Create new GAEB Files with PHP
+
+The `/create-new-project.php` file works similar to the regular demo. It uses the **Dangl.AVA** project format to create a GAEB file in PHP by sending an object to AVACloud. The returned GAEB file is printed to the screen.
+
 ## Authentication
 
 You will need to authenticate with AVACloud with your client secret and client id. These are the credentials of your [**Dangl.Identity**](https://identity.dangl-it.com) OAuth2 client that is configured to access **AVA**Cloud.  

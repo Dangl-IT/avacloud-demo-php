@@ -1,0 +1,894 @@
+{
+  "Id": "4bcda5b5-72c6-4895-bbe3-8f7e198f4de8",
+  "PriceAccuracy": 3,
+  "ForceStrictTotals": true,
+  "ProjectInformation": {
+    "Buyer": {
+      "Name": "Georg Dangl",
+      "Email": "info@dangl-it.com"
+    },
+    "Name": "Neubau Sportheim",
+    "ItemNumberSchema": {
+      "TotalLength": 7,
+      "Tiers": [
+        {
+          "Length": 2,
+          "TierType": "Group"
+        },
+        {
+          "Length": 2,
+          "TierType": "Group"
+        },
+        {
+          "Length": 3,
+          "TierType": "Position"
+        }
+      ]
+    },
+    "CurrencyShort": "€",
+    "CurrencyLong": "Euro",
+    "LabourTimeLabel": "Stunden",
+    "PriceComponents": [
+      "Material",
+      "Geräte"
+    ]
+  },
+  "ServiceSpecifications": [
+    {
+      "Id": "6b570670-1bac-4c0b-80ad-c3b382ca9eee",
+      "ProjectTaxRate": 0.19,
+      "ProjectPriceComponents": [
+        "Material",
+        "Geräte"
+      ],
+      "ProjectItemNumberSchema": {
+        "TotalLength": 7,
+        "Tiers": [
+          {
+            "Length": 2,
+            "TierType": "Group"
+          },
+          {
+            "Length": 2,
+            "TierType": "Group"
+          },
+          {
+            "Length": 3,
+            "TierType": "Position"
+          }
+        ]
+      },
+      "Elements": [
+        {
+          "ShortText": "Abgabe bis 15. August",
+          "LongText": "Dies ist ein Beispielprojekt",
+          "HtmlLongText": "<span>Dies ist ein Beispielprojekt</span>",
+          "ElementType": "NoteTextDto",
+          "Id": "715a6bfa-a52b-4242-ab75-e227ab1e0529",
+          "GaebXmlId": "ID_65346b4e-fbd4-44ed-bb7a-43c4c997f149",
+          "ElementTypeDiscriminator": "NoteTextDto"
+        },
+        {
+          "ProjectTaxRate": 0.19,
+          "ProjectPriceComponents": [
+            "Material",
+            "Geräte"
+          ],
+          "ProjectItemNumberSchema": {
+            "TotalLength": 7,
+            "Tiers": [
+              {
+                "Length": 2,
+                "TierType": "Group"
+              },
+              {
+                "Length": 2,
+                "TierType": "Group"
+              },
+              {
+                "Length": 3,
+                "TierType": "Position"
+              }
+            ]
+          },
+          "Elements": [
+            {
+              "ProjectTaxRate": 0.19,
+              "ProjectPriceComponents": [
+                "Material",
+                "Geräte"
+              ],
+              "ProjectItemNumberSchema": {
+                "TotalLength": 7,
+                "Tiers": [
+                  {
+                    "Length": 2,
+                    "TierType": "Group"
+                  },
+                  {
+                    "Length": 2,
+                    "TierType": "Group"
+                  },
+                  {
+                    "Length": 3,
+                    "TierType": "Position"
+                  }
+                ]
+              },
+              "Elements": [
+                {
+                  "UnitPrice": 800.0,
+                  "Quantity": 1.0,
+                  "UnitTag": "Psch.",
+                  "LabourComponents": {
+                    "Label": "Stunden",
+                    "Values": []
+                  },
+                  "PriceComponents": [
+                    {
+                      "Label": "Material",
+                      "Values": []
+                    },
+                    {
+                      "Label": "Geräte",
+                      "Values": []
+                    },
+                    {
+                      "Price": 800.0,
+                      "Label": "",
+                      "Values": [
+                        {
+                          "Formula": "800",
+                          "Result": 800.0,
+                          "Valid": true,
+                          "ErrorPositionInLine": -1
+                        }
+                      ]
+                    }
+                  ],
+                  "QuantityComponents": [
+                    {
+                      "Formula": "1",
+                      "Result": 1.0,
+                      "Valid": true,
+                      "ErrorPositionInLine": -1
+                    }
+                  ],
+                  "SubDescriptions": [],
+                  "ComplementedBy": [],
+                  "TaxRate": 0.19,
+                  "ItemNumber": {
+                    "Id": "29abcbe2-f7fd-4d00-a9dc-b00e2b08247f",
+                    "StringRepresentation": "01.01.001",
+                    "IsSchemaCompliant": true,
+                    "ItemNumberSchema": {
+                      "TotalLength": 7,
+                      "Tiers": [
+                        {
+                          "Length": 2,
+                          "TierType": "Group"
+                        },
+                        {
+                          "Length": 2,
+                          "TierType": "Group"
+                        },
+                        {
+                          "Length": 3,
+                          "TierType": "Position"
+                        }
+                      ]
+                    },
+                    "Identifiers": [
+                      "01",
+                      "01",
+                      "001"
+                    ]
+                  },
+                  "TotalPrice": 800.0,
+                  "TotalPriceGross": 952.0,
+                  "TotalPriceGrossDeducted": 952.0,
+                  "DeductedPrice": 800.0,
+                  "ShortText": "Baustelleneinrichtung",
+                  "LongText": "Einrichtung der Baustelle inkl. Kran",
+                  "HtmlLongText": "<span>Einrichtung der Baustelle inkl. Kran</span>",
+                  "ElementType": "PositionDto",
+                  "QuantityAssignments": [],
+                  "Id": "5d53147b-bd76-43d5-b44d-fcb50c4f8557",
+                  "GaebXmlId": "ID_c42f2163-074b-4418-bb34-61eda0d2e5ea",
+                  "ElementTypeDiscriminator": "PositionDto"
+                }
+              ],
+              "ProjectLabourTimeLabel": "Stunden",
+              "TotalPriceGrossByTaxRate": [
+                {
+                  "TaxRate": 0.19,
+                  "TotalNet": 800.0,
+                  "TotalDeducted": 800.0,
+                  "TotalTax": 152.0,
+                  "TotalGross": 952.0
+                }
+              ],
+              "DeductedPrice": 800.0,
+              "TotalPrice": 800.0,
+              "TotalPriceGross": 952.0,
+              "TotalPriceGrossDeducted": 952.0,
+              "ShortText": "Allgemein",
+              "ItemNumber": {
+                "Id": "0c148596-1827-4f8e-af75-1be6109b527b",
+                "StringRepresentation": "01.01.",
+                "IsSchemaCompliant": true,
+                "ItemNumberSchema": {
+                  "TotalLength": 7,
+                  "Tiers": [
+                    {
+                      "Length": 2,
+                      "TierType": "Group"
+                    },
+                    {
+                      "Length": 2,
+                      "TierType": "Group"
+                    },
+                    {
+                      "Length": 3,
+                      "TierType": "Position"
+                    }
+                  ]
+                },
+                "Identifiers": [
+                  "01",
+                  "01"
+                ]
+              },
+              "ElementType": "ServiceSpecificationGroupDto",
+              "Id": "08fc852d-a103-4bc4-94b7-c0933e08b0de",
+              "GaebXmlId": "ID_bc0e04c2-2f45-4fff-8484-c124831d608a",
+              "ElementTypeDiscriminator": "ServiceSpecificationGroupDto"
+            }
+          ],
+          "ProjectLabourTimeLabel": "Stunden",
+          "TotalPriceGrossByTaxRate": [
+            {
+              "TaxRate": 0.19,
+              "TotalNet": 800.0,
+              "TotalDeducted": 800.0,
+              "TotalTax": 152.0,
+              "TotalGross": 952.0
+            }
+          ],
+          "DeductedPrice": 800.0,
+          "TotalPrice": 800.0,
+          "TotalPriceGross": 952.0,
+          "TotalPriceGrossDeducted": 952.0,
+          "ShortText": "Hauptgebäude",
+          "ItemNumber": {
+            "Id": "91a93ea6-2c9b-433d-9c19-5ba669d032e0",
+            "StringRepresentation": "01.",
+            "IsSchemaCompliant": true,
+            "ItemNumberSchema": {
+              "TotalLength": 7,
+              "Tiers": [
+                {
+                  "Length": 2,
+                  "TierType": "Group"
+                },
+                {
+                  "Length": 2,
+                  "TierType": "Group"
+                },
+                {
+                  "Length": 3,
+                  "TierType": "Position"
+                }
+              ]
+            },
+            "Identifiers": [
+              "01"
+            ]
+          },
+          "ElementType": "ServiceSpecificationGroupDto",
+          "Id": "98941803-cb8a-4e49-b809-6e8b6f9ef43a",
+          "GaebXmlId": "ID_70c1d2a8-230f-4bee-b1af-04a1d34e92c6",
+          "ElementTypeDiscriminator": "ServiceSpecificationGroupDto"
+        },
+        {
+          "ProjectTaxRate": 0.19,
+          "ProjectPriceComponents": [
+            "Material",
+            "Geräte"
+          ],
+          "ProjectItemNumberSchema": {
+            "TotalLength": 7,
+            "Tiers": [
+              {
+                "Length": 2,
+                "TierType": "Group"
+              },
+              {
+                "Length": 2,
+                "TierType": "Group"
+              },
+              {
+                "Length": 3,
+                "TierType": "Position"
+              }
+            ]
+          },
+          "Elements": [
+            {
+              "ProjectTaxRate": 0.19,
+              "ProjectPriceComponents": [
+                "Material",
+                "Geräte"
+              ],
+              "ProjectItemNumberSchema": {
+                "TotalLength": 7,
+                "Tiers": [
+                  {
+                    "Length": 2,
+                    "TierType": "Group"
+                  },
+                  {
+                    "Length": 2,
+                    "TierType": "Group"
+                  },
+                  {
+                    "Length": 3,
+                    "TierType": "Position"
+                  }
+                ]
+              },
+              "Elements": [
+                {
+                  "UnitPrice": 9.0,
+                  "Quantity": 950.0,
+                  "UnitTag": "m³",
+                  "LabourComponents": {
+                    "Label": "Stunden",
+                    "Values": []
+                  },
+                  "PriceComponents": [
+                    {
+                      "Label": "Material",
+                      "Values": []
+                    },
+                    {
+                      "Label": "Geräte",
+                      "Values": []
+                    },
+                    {
+                      "Price": 9.0,
+                      "Label": "",
+                      "Values": [
+                        {
+                          "Formula": "9",
+                          "Result": 9.0,
+                          "Valid": true,
+                          "ErrorPositionInLine": -1
+                        }
+                      ]
+                    }
+                  ],
+                  "QuantityComponents": [
+                    {
+                      "Formula": "950",
+                      "Result": 950.0,
+                      "Valid": true,
+                      "ErrorPositionInLine": -1
+                    }
+                  ],
+                  "SubDescriptions": [],
+                  "ComplementedBy": [],
+                  "TaxRate": 0.19,
+                  "ItemNumber": {
+                    "Id": "392373d4-a4bf-4dd5-8e12-bd54dfaf460f",
+                    "StringRepresentation": "02.02.001",
+                    "IsSchemaCompliant": true,
+                    "ItemNumberSchema": {
+                      "TotalLength": 7,
+                      "Tiers": [
+                        {
+                          "Length": 2,
+                          "TierType": "Group"
+                        },
+                        {
+                          "Length": 2,
+                          "TierType": "Group"
+                        },
+                        {
+                          "Length": 3,
+                          "TierType": "Position"
+                        }
+                      ]
+                    },
+                    "Identifiers": [
+                      "02",
+                      "02",
+                      "001"
+                    ]
+                  },
+                  "TotalPrice": 8550.0,
+                  "TotalPriceGross": 10174.5,
+                  "TotalPriceGrossDeducted": 10174.5,
+                  "DeductedPrice": 8550.0,
+                  "ShortText": "Aushub",
+                  "LongText": "Aushub für Baugrube",
+                  "HtmlLongText": "<span>Aushub für Baugrube</span>",
+                  "ElementType": "PositionDto",
+                  "QuantityAssignments": [],
+                  "Id": "27c8f6b1-1faa-4633-8504-c3fcb1807041",
+                  "GaebXmlId": "ID_87e2e45b-af86-485c-b032-d98fb7e7423b",
+                  "ElementTypeDiscriminator": "PositionDto"
+                },
+                {
+                  "UnitPrice": 6.0,
+                  "Quantity": 600.0,
+                  "UnitTag": "m³",
+                  "LabourComponents": {
+                    "Label": "Stunden",
+                    "Values": []
+                  },
+                  "PriceComponents": [
+                    {
+                      "Label": "Material",
+                      "Values": []
+                    },
+                    {
+                      "Label": "Geräte",
+                      "Values": []
+                    },
+                    {
+                      "Price": 6.0,
+                      "Label": "",
+                      "Values": [
+                        {
+                          "Formula": "6",
+                          "Result": 6.0,
+                          "Valid": true,
+                          "ErrorPositionInLine": -1
+                        }
+                      ]
+                    }
+                  ],
+                  "QuantityComponents": [
+                    {
+                      "Formula": "600",
+                      "Result": 600.0,
+                      "Valid": true,
+                      "ErrorPositionInLine": -1
+                    }
+                  ],
+                  "SubDescriptions": [],
+                  "ComplementedBy": [],
+                  "TaxRate": 0.19,
+                  "ItemNumber": {
+                    "Id": "451b609b-6f11-4467-9115-eb96fcbce942",
+                    "StringRepresentation": "02.02.002",
+                    "IsSchemaCompliant": true,
+                    "ItemNumberSchema": {
+                      "TotalLength": 7,
+                      "Tiers": [
+                        {
+                          "Length": 2,
+                          "TierType": "Group"
+                        },
+                        {
+                          "Length": 2,
+                          "TierType": "Group"
+                        },
+                        {
+                          "Length": 3,
+                          "TierType": "Position"
+                        }
+                      ]
+                    },
+                    "Identifiers": [
+                      "02",
+                      "02",
+                      "002"
+                    ]
+                  },
+                  "TotalPrice": 3600.0,
+                  "TotalPriceGross": 4284.0,
+                  "TotalPriceGrossDeducted": 4284.0,
+                  "DeductedPrice": 3600.0,
+                  "ShortText": "Wiederverfüllen",
+                  "LongText": "Wiederverfüllen von nicht entsorgtem Material, anfüllen an zu errichtendes Gebäude",
+                  "HtmlLongText": "<span>Wiederverfüllen von nicht entsorgtem Material, anfüllen an zu errichtendes Gebäude</span>",
+                  "ElementType": "PositionDto",
+                  "QuantityAssignments": [],
+                  "Id": "314ccb9a-3383-4f4e-be07-49ac0e91a694",
+                  "GaebXmlId": "ID_80d435cf-b968-446c-b70b-55b25e404d01",
+                  "ElementTypeDiscriminator": "PositionDto"
+                },
+                {
+                  "UnitPrice": 12.0,
+                  "Quantity": 350.0,
+                  "UnitTag": "m³",
+                  "LabourComponents": {
+                    "Label": "Stunden",
+                    "Values": []
+                  },
+                  "PriceComponents": [
+                    {
+                      "Label": "Material",
+                      "Values": []
+                    },
+                    {
+                      "Label": "Geräte",
+                      "Values": []
+                    },
+                    {
+                      "Price": 12.0,
+                      "Label": "",
+                      "Values": [
+                        {
+                          "Formula": "12",
+                          "Result": 12.0,
+                          "Valid": true,
+                          "ErrorPositionInLine": -1
+                        }
+                      ]
+                    }
+                  ],
+                  "QuantityComponents": [
+                    {
+                      "Formula": "350",
+                      "Result": 350.0,
+                      "Valid": true,
+                      "ErrorPositionInLine": -1
+                    }
+                  ],
+                  "SubDescriptions": [],
+                  "ComplementedBy": [],
+                  "TaxRate": 0.19,
+                  "ItemNumber": {
+                    "Id": "b0918b5e-ecb5-4417-bb83-288bc337b215",
+                    "StringRepresentation": "02.02.003",
+                    "IsSchemaCompliant": true,
+                    "ItemNumberSchema": {
+                      "TotalLength": 7,
+                      "Tiers": [
+                        {
+                          "Length": 2,
+                          "TierType": "Group"
+                        },
+                        {
+                          "Length": 2,
+                          "TierType": "Group"
+                        },
+                        {
+                          "Length": 3,
+                          "TierType": "Position"
+                        }
+                      ]
+                    },
+                    "Identifiers": [
+                      "02",
+                      "02",
+                      "003"
+                    ]
+                  },
+                  "TotalPrice": 4200.0,
+                  "TotalPriceGross": 4998.0,
+                  "TotalPriceGrossDeducted": 4998.0,
+                  "DeductedPrice": 4200.0,
+                  "ShortText": "Entsorgung Aushub",
+                  "LongText": "Entsorgung von überschüssigem Aushub, ohne Verunreinigungen",
+                  "HtmlLongText": "<span>Entsorgung von überschüssigem Aushub, ohne Verunreinigungen</span>",
+                  "ElementType": "PositionDto",
+                  "QuantityAssignments": [],
+                  "Id": "e10b57ec-6588-4973-9853-0372854ae7f2",
+                  "GaebXmlId": "ID_9d085e06-87ff-49e4-8141-5c83d0b81ead",
+                  "ElementTypeDiscriminator": "PositionDto"
+                },
+                {
+                  "UnitPrice": 40.0,
+                  "Quantity": 800.0,
+                  "UnitTag": "m²",
+                  "LabourComponents": {
+                    "Label": "Stunden",
+                    "Values": []
+                  },
+                  "PriceComponents": [
+                    {
+                      "Label": "Material",
+                      "Values": []
+                    },
+                    {
+                      "Label": "Geräte",
+                      "Values": []
+                    },
+                    {
+                      "Price": 40.0,
+                      "Label": "",
+                      "Values": [
+                        {
+                          "Formula": "40",
+                          "Result": 40.0,
+                          "Valid": true,
+                          "ErrorPositionInLine": -1
+                        }
+                      ]
+                    }
+                  ],
+                  "QuantityComponents": [
+                    {
+                      "Formula": "800",
+                      "Result": 800.0,
+                      "Valid": true,
+                      "ErrorPositionInLine": -1
+                    }
+                  ],
+                  "SubDescriptions": [],
+                  "ComplementedBy": [],
+                  "TaxRate": 0.19,
+                  "ItemNumber": {
+                    "Id": "81281a48-8dea-4cf1-9c28-23a55e190fcb",
+                    "StringRepresentation": "02.02.004",
+                    "IsSchemaCompliant": true,
+                    "ItemNumberSchema": {
+                      "TotalLength": 7,
+                      "Tiers": [
+                        {
+                          "Length": 2,
+                          "TierType": "Group"
+                        },
+                        {
+                          "Length": 2,
+                          "TierType": "Group"
+                        },
+                        {
+                          "Length": 3,
+                          "TierType": "Position"
+                        }
+                      ]
+                    },
+                    "Identifiers": [
+                      "02",
+                      "02",
+                      "004"
+                    ]
+                  },
+                  "TotalPrice": 32000.0,
+                  "TotalPriceGross": 38080.0,
+                  "TotalPriceGrossDeducted": 38080.0,
+                  "DeductedPrice": 32000.0,
+                  "ShortText": "Decken, Stahlbeton",
+                  "ElementType": "PositionDto",
+                  "QuantityAssignments": [],
+                  "Id": "82bc2bb4-1e6c-46af-bab5-5f1c3323825b",
+                  "GaebXmlId": "ID_039cc562-9e12-4fd2-81a5-51dd62b52e72",
+                  "ElementTypeDiscriminator": "PositionDto"
+                },
+                {
+                  "UnitPrice": 35.0,
+                  "Quantity": 240.0,
+                  "UnitTag": "m²",
+                  "LabourComponents": {
+                    "Label": "Stunden",
+                    "Values": []
+                  },
+                  "PriceComponents": [
+                    {
+                      "Label": "Material",
+                      "Values": []
+                    },
+                    {
+                      "Label": "Geräte",
+                      "Values": []
+                    },
+                    {
+                      "Price": 35.0,
+                      "Label": "",
+                      "Values": [
+                        {
+                          "Formula": "35",
+                          "Result": 35.0,
+                          "Valid": true,
+                          "ErrorPositionInLine": -1
+                        }
+                      ]
+                    }
+                  ],
+                  "QuantityComponents": [
+                    {
+                      "Formula": "240",
+                      "Result": 240.0,
+                      "Valid": true,
+                      "ErrorPositionInLine": -1
+                    }
+                  ],
+                  "SubDescriptions": [],
+                  "ComplementedBy": [],
+                  "TaxRate": 0.19,
+                  "ItemNumber": {
+                    "Id": "51aab6ab-a347-4af4-be4c-d70f9c992c72",
+                    "StringRepresentation": "02.02.005",
+                    "IsSchemaCompliant": true,
+                    "ItemNumberSchema": {
+                      "TotalLength": 7,
+                      "Tiers": [
+                        {
+                          "Length": 2,
+                          "TierType": "Group"
+                        },
+                        {
+                          "Length": 2,
+                          "TierType": "Group"
+                        },
+                        {
+                          "Length": 3,
+                          "TierType": "Position"
+                        }
+                      ]
+                    },
+                    "Identifiers": [
+                      "02",
+                      "02",
+                      "005"
+                    ]
+                  },
+                  "TotalPrice": 8400.0,
+                  "TotalPriceGross": 9996.0,
+                  "TotalPriceGrossDeducted": 9996.0,
+                  "DeductedPrice": 8400.0,
+                  "ShortText": "Wand, 20cm, Stahlbeton",
+                  "ElementType": "PositionDto",
+                  "QuantityAssignments": [],
+                  "Id": "10effc35-a084-4e49-8e05-e0649eb55e18",
+                  "GaebXmlId": "ID_a8d9e0b2-cf11-44c3-8a08-ac30daea4072",
+                  "ElementTypeDiscriminator": "PositionDto"
+                }
+              ],
+              "ProjectLabourTimeLabel": "Stunden",
+              "TotalPriceGrossByTaxRate": [
+                {
+                  "TaxRate": 0.19,
+                  "TotalNet": 56750.0,
+                  "TotalDeducted": 56750.0,
+                  "TotalTax": 10782.5,
+                  "TotalGross": 67532.5
+                }
+              ],
+              "DeductedPrice": 56750.0,
+              "TotalPrice": 56750.0,
+              "TotalPriceGross": 67532.5,
+              "TotalPriceGrossDeducted": 67532.5,
+              "ShortText": "Erd- und Rohbau",
+              "ItemNumber": {
+                "Id": "d67a2a1d-e64b-40d8-b31a-42075e851ad6",
+                "StringRepresentation": "02.02.",
+                "IsSchemaCompliant": true,
+                "ItemNumberSchema": {
+                  "TotalLength": 7,
+                  "Tiers": [
+                    {
+                      "Length": 2,
+                      "TierType": "Group"
+                    },
+                    {
+                      "Length": 2,
+                      "TierType": "Group"
+                    },
+                    {
+                      "Length": 3,
+                      "TierType": "Position"
+                    }
+                  ]
+                },
+                "Identifiers": [
+                  "02",
+                  "02"
+                ]
+              },
+              "ElementType": "ServiceSpecificationGroupDto",
+              "Id": "34de9293-0c8f-4bd0-b0ab-ca5fe9c6bb61",
+              "GaebXmlId": "ID_0b97359b-51e1-4cd7-9158-f2c504e973f9",
+              "ElementTypeDiscriminator": "ServiceSpecificationGroupDto"
+            }
+          ],
+          "ProjectLabourTimeLabel": "Stunden",
+          "TotalPriceGrossByTaxRate": [
+            {
+              "TaxRate": 0.19,
+              "TotalNet": 56750.0,
+              "TotalDeducted": 56750.0,
+              "TotalTax": 10782.5,
+              "TotalGross": 67532.5
+            }
+          ],
+          "DeductedPrice": 56750.0,
+          "TotalPrice": 56750.0,
+          "TotalPriceGross": 67532.5,
+          "TotalPriceGrossDeducted": 67532.5,
+          "ShortText": "Bauleistungen",
+          "ItemNumber": {
+            "Id": "b7d9aceb-2157-411a-8cfb-178c7b816062",
+            "StringRepresentation": "02.",
+            "IsSchemaCompliant": true,
+            "ItemNumberSchema": {
+              "TotalLength": 7,
+              "Tiers": [
+                {
+                  "Length": 2,
+                  "TierType": "Group"
+                },
+                {
+                  "Length": 2,
+                  "TierType": "Group"
+                },
+                {
+                  "Length": 3,
+                  "TierType": "Position"
+                }
+              ]
+            },
+            "Identifiers": [
+              "02"
+            ]
+          },
+          "ElementType": "ServiceSpecificationGroupDto",
+          "Id": "56de2939-f9c7-42fe-a049-c64daf8795c8",
+          "GaebXmlId": "ID_67a2f2cb-d3bd-4519-8814-b783da031b6d",
+          "ElementTypeDiscriminator": "ServiceSpecificationGroupDto"
+        }
+      ],
+      "ProjectLabourTimeLabel": "Stunden",
+      "TotalPriceGrossByTaxRate": [
+        {
+          "TaxRate": 0.19,
+          "TotalNet": 57550.0,
+          "TotalDeducted": 57550.0,
+          "TotalTax": 10934.5,
+          "TotalGross": 68484.5
+        }
+      ],
+      "DeductedPrice": 57550.0,
+      "TotalPrice": 57550.0,
+      "TotalPriceGross": 68484.5,
+      "TotalPriceGrossDeducted": 68484.5,
+      "GaebXmlId": "ID_f64922c3-2dcd-48da-b3ed-771eb12ad313",
+      "ProjectInformation": {
+        "Buyer": {
+          "Name": "Georg Dangl",
+          "Email": "info@dangl-it.com"
+        },
+        "Name": "Neubau Sportheim",
+        "ItemNumberSchema": {
+          "TotalLength": 7,
+          "Tiers": [
+            {
+              "Length": 2,
+              "TierType": "Group"
+            },
+            {
+              "Length": 2,
+              "TierType": "Group"
+            },
+            {
+              "Length": 3,
+              "TierType": "Position"
+            }
+          ]
+        },
+        "CurrencyShort": "€",
+        "CurrencyLong": "Euro",
+        "LabourTimeLabel": "Stunden",
+        "PriceComponents": [
+          "Material",
+          "Geräte"
+        ]
+      },
+      "ExchangePhase": "Grant",
+      "Origin": "GaebXml",
+      "CreationDate": "2019-01-07T19:36:18",
+      "PriceInformation": {
+        "Id": "8c4642de-0ef6-4c6a-bace-f0c42cef8fe2",
+        "TaxRate": 0.19,
+        "TradeDiscounts": []
+      },
+      "ProjectCatalogues": []
+    }
+  ],
+  "GaebXmlId": "0f98b339-c251-4688-b89c-67c8f33ed24d"
+}
