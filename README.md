@@ -29,5 +29,41 @@ The `/create-new-project.php` file works similar to the regular demo. It uses th
 You will need to authenticate with AVACloud with your client secret and client id. These are the credentials of your [**Dangl.Identity**](https://identity.dangl-it.com) OAuth2 client that is configured to access **AVA**Cloud.  
 If you don't have values for `ClientId` and `ClientSecret` yet, you can [check out the documentation](https://docs.dangl-it.com/Projects/AVACloud/latest/howto/registration/developer_signup.html) for instructions on how to register for **AVA**Cloud and create an OAuth2 client.
 
+## Example Code - Iterating over all Elements
+
+The following PHP snippet displays how you can iterate recursively over all elements in a **Dangl.AVA** project:
+
+```php
+$project = getProject();
+
+$baseContainer = $project->ServiceSpecifications[0];
+$elements = getElementsInContainer($baseContainer);
+
+foreach ($elements as $element) {
+    if ($element->elementTypeDiscriminator == 'PositionDto') {
+        // The 'elementTypeDiscriminator' identifies the kind of element,
+        // in this case it's a position
+        echo $element->itemNumber->stringRepresentation.'<br>';
+        // You can also set the price for a position
+        $element->unitPriceOverride = 200.0;
+    }
+}
+
+function getElementsInContainer($container) {
+    $elementsList = [];
+    foreach ($container->elements as $element) {
+        array_push($elementsList, $element);
+        if ($element->elementTypeDiscriminator == 'ServiceSpecificationGroupDto') {
+            $childElements = getElementsInContainer($element);
+            foreach ($childElements as $childElement) {
+                array_push($elementsList, $childElement);
+            }
+        }
+    }
+
+    return $elementsList;
+}
+```
+
 ---
 [License](./LICENSE.md)
