@@ -7,6 +7,7 @@ Method | HTTP request | Description
 [**excelConversionConvertToAva**](ExcelConversionApi.md#excelConversionConvertToAva) | **POST** /conversion/excel/ava | Converts Excel files to Dangl.AVA projects.
 [**excelConversionConvertToExcel**](ExcelConversionApi.md#excelConversionConvertToExcel) | **POST** /conversion/excel/excel | Converts Excel files to Excel files. Used, for example, when elements were added in excel to generate or modify a project. The Excel file can then be shared containing the full project with all formattings, formulas and styles applied.
 [**excelConversionConvertToGaeb**](ExcelConversionApi.md#excelConversionConvertToGaeb) | **POST** /conversion/excel/gaeb | Converts Excel files to GAEB files.
+[**excelConversionConvertToOenorm**](ExcelConversionApi.md#excelConversionConvertToOenorm) | **POST** /conversion/excel/oenorm | Converts Excel files to Oenorm files.
 
 
 # **excelConversionConvertToAva**
@@ -172,6 +173,65 @@ Name | Type | Description  | Notes
  **rebuild_item_number_schema** | **bool**| When importing new elements from Excel, sometimes the ItemNumberSchema in the file is not in compliance with the GAEB requirements. Enabling this option tries to repair the ItemNumberSchema. Defaults to false. | [optional]
  **destination_gaeb_type** | **string**| Defaults to GAEB XML V3.2 | [optional]
  **target_exchange_phase_transform** | **string**| Defaults to none, meaning no transformation will be done | [optional]
+
+### Return type
+
+[**\SplFileObject**](../Model/\SplFileObject.md)
+
+### Authorization
+
+[Dangl.Identity](../../README.md#Dangl.Identity)
+
+### HTTP request headers
+
+ - **Content-Type**: multipart/form-data
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+
+# **excelConversionConvertToOenorm**
+> \SplFileObject excelConversionConvertToOenorm($excel_file, $read_new_elements, $rebuild_item_number_schema, $destination_oenorm_type, $try_repair_project_structure)
+
+Converts Excel files to Oenorm files.
+
+### Example
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+// Configure OAuth2 access token for authorization: Dangl.Identity
+$config = Swagger\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+
+$apiInstance = new Swagger\Client\Api\ExcelConversionApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client(),
+    $config
+);
+$excel_file = "/path/to/file.txt"; // \SplFileObject | The input file
+$read_new_elements = true; // bool | Defaults to false
+$rebuild_item_number_schema = true; // bool | When importing new elements from Excel, sometimes the ItemNumberSchema in the file is not in compliance with the GAEB requirements. Enabling this option tries to repair the ItemNumberSchema. Defaults to false.
+$destination_oenorm_type = "destination_oenorm_type_example"; // string | Defaults to Lv2015
+$try_repair_project_structure = true; // bool | Defaults to false. If this is enabled, the converter will try to ensure that the project structure can be mapped to Oenorm. It might introduce additional group levels to ensure a compatible target
+
+try {
+    $result = $apiInstance->excelConversionConvertToOenorm($excel_file, $read_new_elements, $rebuild_item_number_schema, $destination_oenorm_type, $try_repair_project_structure);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling ExcelConversionApi->excelConversionConvertToOenorm: ', $e->getMessage(), PHP_EOL;
+}
+?>
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **excel_file** | **\SplFileObject**| The input file | [optional]
+ **read_new_elements** | **bool**| Defaults to false | [optional]
+ **rebuild_item_number_schema** | **bool**| When importing new elements from Excel, sometimes the ItemNumberSchema in the file is not in compliance with the GAEB requirements. Enabling this option tries to repair the ItemNumberSchema. Defaults to false. | [optional]
+ **destination_oenorm_type** | **string**| Defaults to Lv2015 | [optional]
+ **try_repair_project_structure** | **bool**| Defaults to false. If this is enabled, the converter will try to ensure that the project structure can be mapped to Oenorm. It might introduce additional group levels to ensure a compatible target | [optional]
 
 ### Return type
 

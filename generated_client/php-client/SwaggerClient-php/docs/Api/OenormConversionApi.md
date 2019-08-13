@@ -7,6 +7,7 @@ Method | HTTP request | Description
 [**oenormConversionConvertToAva**](OenormConversionApi.md#oenormConversionConvertToAva) | **POST** /conversion/oenorm/ava | Converts ÖNorm files to Dangl.AVA projects
 [**oenormConversionConvertToExcel**](OenormConversionApi.md#oenormConversionConvertToExcel) | **POST** /conversion/oenorm/excel | Converts ÖNorm files to Excel
 [**oenormConversionConvertToGaeb**](OenormConversionApi.md#oenormConversionConvertToGaeb) | **POST** /conversion/oenorm/gaeb | Converts ÖNorm files to GAEB files.
+[**oenormConversionConvertToOenorm**](OenormConversionApi.md#oenormConversionConvertToOenorm) | **POST** /conversion/oenorm/oenorm | Converts ÖNorm files to Oenorm files.
 
 
 # **oenormConversionConvertToAva**
@@ -160,6 +161,61 @@ Name | Type | Description  | Notes
  **oenorm_file** | **\SplFileObject**| The input file | [optional]
  **destination_gaeb_type** | **string**| Defaults to GAEB XML V3.2 | [optional]
  **target_exchange_phase_transform** | **string**| Defaults to none, meaning no transformation will be done | [optional]
+
+### Return type
+
+[**\SplFileObject**](../Model/\SplFileObject.md)
+
+### Authorization
+
+[Dangl.Identity](../../README.md#Dangl.Identity)
+
+### HTTP request headers
+
+ - **Content-Type**: multipart/form-data
+ - **Accept**: text/plain, application/json, text/json
+
+[[Back to top]](#) [[Back to API list]](../../README.md#documentation-for-api-endpoints) [[Back to Model list]](../../README.md#documentation-for-models) [[Back to README]](../../README.md)
+
+# **oenormConversionConvertToOenorm**
+> \SplFileObject oenormConversionConvertToOenorm($oenorm_file, $destination_oenorm_type, $try_repair_project_structure)
+
+Converts ÖNorm files to Oenorm files.
+
+### Example
+```php
+<?php
+require_once(__DIR__ . '/vendor/autoload.php');
+
+// Configure OAuth2 access token for authorization: Dangl.Identity
+$config = Swagger\Client\Configuration::getDefaultConfiguration()->setAccessToken('YOUR_ACCESS_TOKEN');
+
+$apiInstance = new Swagger\Client\Api\OenormConversionApi(
+    // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
+    // This is optional, `GuzzleHttp\Client` will be used as default.
+    new GuzzleHttp\Client(),
+    $config
+);
+$oenorm_file = "/path/to/file.txt"; // \SplFileObject | The input file
+$destination_oenorm_type = "destination_oenorm_type_example"; // string | Defaults to Lv2015
+$try_repair_project_structure = true; // bool | Defaults to false. If this is enabled, the converter will try to ensure that the project structure can be mapped to Oenorm. It might introduce additional group levels to ensure a compatible target
+
+try {
+    $result = $apiInstance->oenormConversionConvertToOenorm($oenorm_file, $destination_oenorm_type, $try_repair_project_structure);
+    print_r($result);
+} catch (Exception $e) {
+    echo 'Exception when calling OenormConversionApi->oenormConversionConvertToOenorm: ', $e->getMessage(), PHP_EOL;
+}
+?>
+```
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **oenorm_file** | **\SplFileObject**| The input file | [optional]
+ **destination_oenorm_type** | **string**| Defaults to Lv2015 | [optional]
+ **try_repair_project_structure** | **bool**| Defaults to false. If this is enabled, the converter will try to ensure that the project structure can be mapped to Oenorm. It might introduce additional group levels to ensure a compatible target | [optional]
 
 ### Return type
 
