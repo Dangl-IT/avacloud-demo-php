@@ -38,10 +38,42 @@ $apiInstance = new Swagger\Client\Api\GaebConversionApi(
 $gaebFile = './GAEBXML_EN.X86';
 try {
     $result = $apiInstance->gaebConversionConvertToAva($gaebFile);
+    echo '<h2>Positions:</h2>';
+    printPositions($result);
+    echo '<h2>Full Project:</h2>';
     echo '<pre>';
     print_r($result);
     echo '</pre>';
 } catch (Exception $e) {
     echo 'Exception when calling GaebConversionApi->gaebConversionConvertToAva: ', $e->getMessage(), PHP_EOL;
 }
+
+function printPositions($project) {
+    $baseContainer = $project->getServiceSpecifications()[0];
+    $elements = getElementsInContainer($baseContainer);
+    
+    foreach ($elements as $element) {
+        if ($element->getElementTypeDiscriminator() == 'PositionDto') {
+            // The 'elementTypeDiscriminator' identifies the kind of element,
+            // in this case it's a position
+            echo $element->getItemNumber()->getStringRepresentation().'<br>';
+        }
+    }
+}
+
+function getElementsInContainer($container) {
+    $elementsList = [];
+    foreach ($container->getElements() as $element) {
+        array_push($elementsList, $element);
+        if ($element->getElementTypeDiscriminator() == 'ServiceSpecificationGroupDto') {
+            $childElements = getElementsInContainer($element);
+            foreach ($childElements as $childElement) {
+                array_push($elementsList, $childElement);
+            }
+        }
+    }
+
+    return $elementsList;
+}
+
 ?>

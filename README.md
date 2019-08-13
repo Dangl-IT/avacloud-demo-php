@@ -16,7 +16,7 @@ https://github.com/Dangl-IT/Dangl.AVACloudClientGenerator/releases
 
 ## Run the Project
 
-Simply run the PHP server in the root of this repository and navigate to `/demo.php`. The script will send the GAEB file `GAEBXML_EN.X86` to the AVACloud API and print the converted project to the screen.
+Simply run the PHP server in the root of this repository and navigate to `/demo.php`. The script will send the GAEB file `GAEBXML_EN.X86` to the AVACloud API and print the converted project to the screen. Additionally, it will print the _item numbers_ for all encountered positions in the project. 
 
 Please make sure that the `$clientId` and `$clientSecret` variables are set at the top of the `demo.php`. See the next section for details.
 
