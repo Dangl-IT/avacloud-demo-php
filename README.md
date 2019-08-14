@@ -65,5 +65,35 @@ function getElementsInContainer($container) {
 }
 ```
 
+To print the whole structure of the service specification, you can use code like this:
+
+```php
+$result = $apiInstance->gaebConversionConvertToAva($gaebFile);
+printElementTypes($result->getServiceSpecifications()[0]->getElements());
+
+function printElementTypes($elements) {
+    foreach ($elements as $element) {
+        if ($element->getElementTypeDiscriminator() == 'ServiceSpecificationGroupDto') {
+            echo 'Group start '.$element->getItemNumber()->getStringRepresentation()
+            .' - '
+            .$element->getShortText()
+            .'<br>';
+            // Groups have elements of their own
+            printElementTypes($element->getElements());
+            echo 'Group end '.$element->getItemNumber()->getStringRepresentation().'<br>';
+        } else if ($element->getElementTypeDiscriminator() == 'PositionDto') {
+            echo 'Position '.$element->getItemNumber()->getStringRepresentation()
+            .' - '
+            .$element->getShortText()
+            .'<br>';
+        } else if ($element->getElementTypeDiscriminator() == 'NoteTextDto') {
+            echo 'Note Text<br>';
+        } else if ($element->getElementTypeDiscriminator() == 'ExecutionDescriptionDto') {
+            echo 'ExecutionDescription<br>';
+        }
+    }
+}
+```
+
 ---
 [License](./LICENSE.md)
