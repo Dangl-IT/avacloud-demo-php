@@ -3,7 +3,7 @@
 $clientId = '';
 $clientSecret = '';
 
-require_once(__DIR__ . '/generated_client/php-client/SwaggerClient-php/vendor/autoload.php');
+require_once(__DIR__ . '/vendor/autoload.php');
 
 // This is a regular OpenID client credenials grant request to obtain an authentication token
 $authHeader = base64_encode($clientId.':'.$clientSecret);
@@ -26,9 +26,9 @@ if ($authResult === false) {
 $authToken = json_decode($authResult)->access_token;
 
 // Configure OAuth2 access token for authorization: Dangl.Identity
-$config = Swagger\Client\Configuration::getDefaultConfiguration()->setAccessToken($authToken);
+$config = Dangl\AVACloud\Configuration::getDefaultConfiguration()->setAccessToken($authToken);
 
-$apiInstance = new Swagger\Client\Api\GaebConversionApi(
+$apiInstance = new Dangl\AVACloud\Api\GaebConversionApi(
     // If you want use custom http client, pass your client which implements `GuzzleHttp\ClientInterface`.
     // This is optional, `GuzzleHttp\Client` will be used as default.
     new GuzzleHttp\Client(),

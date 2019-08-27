@@ -1,0 +1,5 @@
+{
+  "require": {
+      "dangl/avacloud": "0.1.15"
+  }  
+}
