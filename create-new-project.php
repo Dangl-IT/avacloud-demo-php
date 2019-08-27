@@ -41,11 +41,11 @@ $avaProject = json_decode($avaJson);
 
 // The following snippet shows you how
 // to set an unit price in the example project
-$avaProject->ServiceSpecifications[0]
-    ->Elements[1] // Top Level Group
-    ->Elements[0] // Second Level Group
-    ->Elements[0] // Position
-    ->UnitPriceOverride = 1500.0;
+$avaProject->serviceSpecifications[0]
+    ->elements[1] // Top Level Group
+    ->elements[0] // Second Level Group
+    ->elements[0] // Position
+    ->unitPriceOverride = 1500.0;
 
 try {
     $result = $apiInstance->avaConversionConvertToGaeb($avaProject);
