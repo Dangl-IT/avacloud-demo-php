@@ -10,9 +10,15 @@ This project here contains example code in PHP to read and convert GAEB files. T
 The client libraries are available here:  
 https://github.com/Dangl-IT/Dangl.AVACloudClientGenerator/releases
 
+The PHP client is available on Packagist: [https://packagist.org/packages/dangl/avacloud](https://packagist.org/packages/dangl/avacloud)
+
 ## Installation
 
-1. Run `composer install` in the `generated_client/php-client/SwaggerClient-php/` directory.
+1. Run `composer install` in the root directory.
+
+### Alternative Install with Source Code
+
+Instead of importing the dependency via Composer, you can manually download the source from here: [https://github.com/Dangl-IT/Dangl.AVACloudClientGenerator/releases](https://github.com/Dangl-IT/Dangl.AVACloudClientGenerator/releases). Just make sure to run `composer install` after unzipping the client code.
 
 ## Run the Project
 
@@ -36,7 +42,7 @@ The following PHP snippet displays how you can iterate recursively over all elem
 ```php
 $project = getProject();
 
-$baseContainer = $project->ServiceSpecifications[0];
+$baseContainer = $project->serviceSpecifications[0];
 $elements = getElementsInContainer($baseContainer);
 
 foreach ($elements as $element) {
