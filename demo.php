@@ -35,7 +35,7 @@ $apiInstance = new Dangl\AVACloud\Api\GaebConversionApi(
     $config
 );
 
-$gaebFile = './GAEBXML_EN.X86';
+$gaebFile = new SplFileObject(__DIR__ . '/GAEBXML_EN.X86', 'rb');
 try {
     $result = $apiInstance->gaebConversionConvertToAva($gaebFile);
     
